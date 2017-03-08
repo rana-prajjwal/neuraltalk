@@ -1,0 +1,5 @@
+ffmpeg -f video4linux2 -s 640x480 -i /dev/video0 -ss 0:0:2 -frames 1 ~/neuraltalk/push_model/video/out.jpg
+cp task.txt ./video/task.txt
+sleep 10[s]
+rm -r ./video
+
